@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array to object</title>
+</head>
+<body>
+    <h1>welcome to my HTML page</h1>
+    <p id = "name1">demo</p>
+    <p id = "name2">demo</p>
+    <p id = "name3">demo</p>
+    <br>
+    <p id = "name4">demo</p>
+    <p id = "name5">demo</p>
+    <p id = "name6">demo</p>
+    <br>
+    <p id = "name7">demo</p>
+    <p id = "name8">demo</p>
+    <p id = "name9">demo</p>
+    
+    
+
+    <script>   //Array of objects, 
+        const obj = [
+            { name:"afreen", age:"20", std:"12th"},   
+            { name:"zikra", age:"21", std:"11th"},
+            { name:"iram", age:"17", std:"10th"}
+        ]
+
+        console.log(obj[1].name);
+        console.log(obj[0].name);
+        console.log(obj[0].age);
+        console.log(obj);
+
+
+        var name1 = document.getElementById('name1').innerText=obj[0].name;
+        var name1 = document.getElementById('name2').innerText=obj[0].age;
+        var name1 = document.getElementById('name3').innerText=obj[0].std;
+         
+
+        var name1 = document.getElementById('name4').innerText=obj[1].name;
+        var name1 = document.getElementById('name5').innerText=obj[1].age;
+        var name1 = document.getElementById('name6').innerText=obj[1].std;
+         
+        
+        var name1 = document.getElementById('name7').innerText=obj[2].name;
+        var name1 = document.getElementById('name8').innerText=obj[2].age;
+        var name1 = document.getElementById('name9').innerText=obj[2].std;
+         
+        </script>
+</body>
+</html>

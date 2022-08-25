@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example code</title>
+    <style> 
+    .test{
+        background-color: lightblue;
+        font-family: verdana;
+        text-align:center;
+        padding: 2px 2px 2px 2px;
+        border: 1px solid black;
+
+    }
+    #myheader{
+        text-align: center;
+
+    }
+    </style>
+</head>
+
+<body>
+    <h1 id="myheader">welcome to my HTML page</h1>
+    <!-- <p id="name1">demo</p>
+    <br><br>
+    <p id="name2">demo</p>
+    <br>
+    <p id="name3">demo</p> -->
+    <!-- <p id="name1">demo</p>
+    <br><br>
+    <p id="name2">demo</p>
+    <br>
+    <p id="name3">demo</p> -->
+    <!-- <p id="name1">demo</p>
+    <br><br>
+    <p id="name2">demo</p>
+    <br>
+    <p id="name3">demo</p> -->
+
+    <div id="demo"></div>
+    <script>
+        const obj1 = `[ 
+        {"name":"Zikra", "age":"21", "std":"Graduation"},
+        {"name":"Iram", "age":"19", "std":"college"},
+        {"name":"Anaam", "age":"17", "std":"school"},
+        {"name":"ASAAnaam", "age":"17", "std":"school"},
+        {"name":"xyz", "age":"14", "std":"test"},
+        {"name":"xyz", "age":"14", "std":"test"},
+        {"name":"xyz", "age":"14", "std":"test"},
+        {"name":"anaya", "age":"14", "std":"test"}
+    ]`
+
+        const obj = JSON.parse(obj1); 
+        let html ='';
+        for (let a of obj) {
+            html +=  `<div class="test">
+            <p id="name1">${a.name}</p>
+            <p id="name2">${a.age}</p>
+            <p id="name3">${a.std}</p>
+            </div>
+            <br>
+            `
+        }
+        document.getElementById ('demo').innerHTML=html;
+
+
+
+
+        // var name1 = document.getElementById('name1').innerText = obj[0].name + " " + obj[0].age + " " + obj[0].std;
+        // var name1 = document.getElementById('name2').innerText = obj[1].name + " " + obj[1].age + " " + obj[1].std;
+        // var name1 = document.getElementById('name3').innerText = obj[2].name + " " + obj[2].age + " " + obj[2].std;
+    </script>
+
+</body>
+
+</html>

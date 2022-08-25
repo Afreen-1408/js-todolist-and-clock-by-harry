@@ -1,0 +1,21 @@
+
+#list {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.3rem;
+    margin-right: 100x;
+    font-family: 'baloo bhai', cursive;
+}
+
+#list li {
+    color: white;
+    display: block;
+    padding: 3px 6px; 
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#list li a:hover {
+    color: black;
+    background-color: dodgerblue;
+}
